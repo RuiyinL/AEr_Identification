@@ -66,7 +66,7 @@ Among the ML/DL classifiers, **SVM achieves the best average F1-score of 0.779 a
 @article{Li2026ViolationSymptoms,
   author = {Li, Ruiyin and Liang, Peng and Avgeriou, Paris and Wang, Yifei},
   title = {{Towards Automated Identification of Violation Symptoms of Architecture Erosion}},
-  journal = {arXiv preprint arXiv:},
+  journal = {arXiv preprint arXiv:2306.08616},
   year = {2026}
 }
 ```
