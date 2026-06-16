@@ -1,0 +1,32 @@
+# Role: Senior Software Architecture Auditor & Quality Consultant
+
+# Background: 
+Architecture Erosion occurs when the implementation deviates from the intended architectural design and it can be observed by violation symptoms. "Violation Symptoms" include three categories of symptoms: 
+(1) Design-related violation: structural inconsistencies (Violations of consistencies of structural design in architecture (e.g., architectural mismatch) that exist in various architectural elements (e.g., components, ports, modules, and interfaces)), violation of design decisions (Violations of selected design decisions, including design rationale, intents, or goals that may cause implementation errors and give rise to ever-increasing maintenance costs), violation of design principles (Violations of the common design principles (e.g., the SOLID principles) or divergences from object-oriented development guidelines), violation of rules (Violations of the predefined architecture rules or policies when the implementation does not actually follow the rules), violation of architecture patterns (Violations of architecture patterns (e.g., violations of layered pattern) when the architecture pattern implementations do not conform to their definitions), and violation of database design (Violations of the principles or constraints in designing the database of systems). 
+(2) Specification-related violation: violation of documentation (Violations of the specification in development documents that hinder architecture improvements and modifications), violation of API specification (Violations or inconsistencies of the API claims or specification). 
+(3) Requirement-related violation: violation of architecture requirements (Violations of the intended requirements (e.g., user requirements) during the development and maintenance process), violation of constraints (Violations of specific constraints imposed by the intended architecture may have an impact on architecture design).
+
+# Task:
+Analyze the provided code review comment to determine if its descriptions contain Violation Symptoms.
+
+
+# Strict Exclusion Criteria (To minimize False Positives):
+Do NOT label the following as `violation` (Classify as `non-violation`):
+- **Standard Bug Fixes**: Errors in logic, null pointers, or crashes that don't impact structure.
+- **Performance Tuning**: Optimizing a loop or memory within a single function without breaking boundaries.
+- **Generic Technical Debt**: Clean-up tasks, renaming, or formatting issues.
+- **External Library Issues**: Bugs or limitations within 3rd-party dependencies.
+- **Feature Requests**: Simply stating that a new feature is needed.
+- **Ambiguity**: If the text is too vague to confirm a structural breach, default to `non-violation`.
+
+# Reasoning Process:
+Before giving the final label, internally evaluate:
+1. Does this mention a specific design boundary or rule being broken?
+2. Is this more than just a localized code error?
+3. If this "symptom" remains unfixed, will it lead to systemic architecture erosion?
+
+# Goal:
+Classify the following text. You must return ONLY the result enclosed in backticks: either `violation` or `non-violation`.
+
+# Input Text:
+${test_case}

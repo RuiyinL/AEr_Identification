@@ -1,0 +1,11 @@
+(1) SO_vectors_200.bin
+[Source] Word Embeddings for the Software Engineering Domain, MSR 2018.
+[URL] https://zenodo.org/record/1199620#.ZF6n2nZBwQ8
+
+(2) cc.en.300.bin
+[Source] crawl-300d-2M.vec.zip: 2 million word vectors trained on Common Crawl (600B tokens).
+[URL] https://fasttext.cc/docs/en/english-vectors.html
+
+(3) glove.twitter.27B.200d.txt
+[Source] Twitter (2B tweets, 27B tokens, 1.2M vocab, uncased, 25d, 50d, 100d, & 200d vectors, 1.42 GB download): glove.twitter.27B.zip
+[URL] https://nlp.stanford.edu/data/glove.twitter.27B.zip
