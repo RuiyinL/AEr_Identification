@@ -3,10 +3,10 @@
 </div>
 
 <div align="center">
-    <a href="">
+    <a href="https://github.com/RuiyinL/AEr_Identification">
         <img src="https://img.shields.io/badge/GitHub-000?logo=github&logoColor=FFE165&style=for-the-badge" alt="">
     </a>
-    <a href="">
+    <a href="https://arxiv.org/abs/2306.08616">
         <img src="https://img.shields.io/badge/Paper-000?logoColor=FFE165&logo=arxiv&style=for-the-badge" alt="">
     </a>
     <hr>
